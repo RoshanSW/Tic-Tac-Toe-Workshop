@@ -17,7 +17,6 @@ public class TicTacToe {
 
     public static void playerChoice()
     {
-
         System.out.println("Enter Player 1 choice (X / O) :");
         char choice=scan.next().toUpperCase().charAt(0);
         if(choice == 'X')
@@ -37,10 +36,23 @@ public class TicTacToe {
         }
     }
 
+
+    public static void showBoard()
+    {
+        System.out.println(" ------------------------------ ");
+        System.out.println("| " + boardArray[1] + " | " + boardArray[2] + " | " + boardArray[3] + " |");
+        System.out.println("|-----------|");
+        System.out.println("| " + boardArray[4] + " | " + boardArray[5] + " | " + boardArray[6] + " |");
+        System.out.println("|-----------|");
+        System.out.println("| " + boardArray[7] + " | " + boardArray[8] + " | " + boardArray[9] + " |");
+        System.out.println(" ------------------------------  ");
+    }
+
     public static void main(String args[])
     {
         TicTacToe t = new TicTacToe();
         t.arrayInitialize();
         playerChoice();
+        showBoard();
     }
 }
