@@ -2,7 +2,7 @@ package TicTacToe;
 import java.util.Scanner;
 public class TicTacToe {
 
-    char[] javaCharArray = new char[10];
+    static char[] javaCharArray = new char[10];
     static char player1;
     static char player2;
     static Scanner scan = new Scanner(System.in);
@@ -40,11 +40,11 @@ public class TicTacToe {
     public static void showBoard()
     {
         System.out.println(" ------------------------------ ");
-        System.out.println("| " + boardArray[1] + " | " + boardArray[2] + " | " + boardArray[3] + " |");
+        System.out.println("| " + javaCharArray[1] + " | " + javaCharArray[2] + " | " + javaCharArray[3] + " |");
         System.out.println("|-----------|");
-        System.out.println("| " + boardArray[4] + " | " + boardArray[5] + " | " + boardArray[6] + " |");
+        System.out.println("| " + javaCharArray[4] + " | " + javaCharArray[5] + " | " + javaCharArray[6] + " |");
         System.out.println("|-----------|");
-        System.out.println("| " + boardArray[7] + " | " + boardArray[8] + " | " + boardArray[9] + " |");
+        System.out.println("| " + javaCharArray[7] + " | " + javaCharArray[8] + " | " + javaCharArray[9] + " |");
         System.out.println(" ------------------------------  ");
     }
 
